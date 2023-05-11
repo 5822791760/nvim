@@ -14,9 +14,9 @@ return require('packer').startup(function(use)
   }
 
   use({
-	  'sainnhe/gruvbox-material',
+	  'navarasu/onedark.nvim',
 	  config = function()
-		  vim.cmd('colorscheme gruvbox-material')
+		  vim.cmd('colorscheme onedark')
 	  end
   })
 
