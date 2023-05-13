@@ -6,7 +6,11 @@ local lsp = require('lsp-zero').preset({
 })
 local lspconfig = require('lspconfig')
 local cmp = require('cmp')
-local cmp_action = require('lsp-zero').cmp_action()
+
+lsp.ensure_installed({
+  'lua-language-server',
+  'pyright',
+})
 
 lsp.on_attach(function(client, bufnr)
   lsp.default_keymaps({buffer = bufnr})
