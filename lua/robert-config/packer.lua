@@ -19,6 +19,12 @@ return require('packer').startup(function(use)
 		  vim.cmd('colorscheme onedark')
 	  end
   })
+  use({
+	  'ellisonleao/gruvbox.nvim',
+	  config = function()
+		  vim.cmd('colorscheme gruvbox')
+	  end
+  })
 
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use('ThePrimeagen/harpoon')
@@ -71,5 +77,8 @@ use {
 }
 
 use {'nvim-pack/nvim-spectre'}
-
+use {
+	"windwp/nvim-autopairs",
+    config = function() require("nvim-autopairs").setup {} end
+}
 end)
