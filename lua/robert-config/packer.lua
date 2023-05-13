@@ -70,4 +70,6 @@ use {
   end
 }
 
+use {'nvim-pack/nvim-spectre'}
+
 end)
