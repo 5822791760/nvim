@@ -77,6 +77,7 @@ use {
 }
 
 use {'nvim-pack/nvim-spectre'}
+use {'RRethy/vim-illuminate'}
 use {
 	"windwp/nvim-autopairs",
     config = function() require("nvim-autopairs").setup {} end
