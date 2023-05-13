@@ -8,7 +8,7 @@ local lspconfig = require('lspconfig')
 local cmp = require('cmp')
 
 lsp.ensure_installed({
-  'lua-language-server',
+  'lua_ls',
   'pyright',
 })
 
@@ -38,6 +38,15 @@ cmp.setup({
   mapping = {
     -- `Enter` key to confirm completion
     ['<CR>'] = cmp.mapping.confirm({select = false}),
+  }
+})
+
+vim.diagnostic.config({
+  underline = {
+    severity = { max = vim.diagnostic.severity.INFO }
+  },
+  virtual_text = {
+    severity = { min = vim.diagnostic.severity.WARN }
   }
 })
 
