@@ -13,7 +13,11 @@ brew install iterm2 neovim gnu-sed
 ### Clone Config
 ```
 git clone https://github.com/5822791760/nvim.git ~/.config/nvim
-nvim ~/.config/nvim/lua/robert-config/packer.lua +so +PackerSync
+```
+
+### Open to install (There will be error when open first time)
+```
+nvim
 ```
 
 ---
