@@ -1,10 +1,4 @@
 # Install Everything
-
-### Must have (Plugin manager)
-```
-git clone --depth 1 https://github.com/wbthomason/packer.nvim\
- ~/.local/share/nvim/site/pack/packer/start/packer.nvim
-```
 ### For using neovim spectre and theme
 ```
 brew install iterm2 neovim gnu-sed
