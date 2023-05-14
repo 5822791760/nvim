@@ -16,7 +16,8 @@ if ok then
 
     lsp.on_attach(function(client, bufnr)
         lsp.default_keymaps({ buffer = bufnr })
-        --lsp.buffer_autoformat()
+        vim.keymap.set('n', 'gR', '<cmd>lua vim.lsp.buf.rename()<cr>', { buffer = true })
+        -- lsp.buffer_autoformat()
     end)
 
     -- (Optional) Configure lua language server for neovim

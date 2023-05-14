@@ -2,6 +2,9 @@
 ### For using neovim spectre and theme
 ```
 brew install iterm2 neovim gnu-sed
+
+# Recommend to use with lazygit
+brew install lazygit
 ```
 
 ### Clone Config
@@ -9,7 +12,7 @@ brew install iterm2 neovim gnu-sed
 git clone https://github.com/5822791760/nvim.git ~/.config/nvim
 ```
 
-### Open to install (There will be error when open first time)
+### Open to install
 ```
 nvim
 ```
@@ -26,6 +29,7 @@ nvim
 <leader>r = Replace word and can use . to replace occurence
 <leader>R = Same as <leader>r but for 'W'
 <leader>e = file explorer
+<leader>g = Toggle lazygit (NEED LAZYGIT INSTALLED)
 ```
 
 ## Plugin Hotkey
@@ -46,18 +50,14 @@ sbd (delete bracket)
 srb (Replace bracket)
 ```
 
-vim fugitive (git)
-```
-<leader>g = Git Explorer
-```
-
 harpoon
 ```
 <leader>a = Add Mark
-<leader>h = Mark Explorer
-<C-q> = Saved Mark 1
-<C-w> = Saved Mark 2
-<C-e> = Saved Mark 3
+<C-e> = Mark Explorer
+<leader1> = Saved Mark 1
+<leader2> = Saved Mark 2
+<leader3> = Saved Mark 3
+<leader4> = Saved Mark 4
 ```
 
 undo tree
