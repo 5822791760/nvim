@@ -28,7 +28,7 @@ return require('packer').startup(function(use)
   use({
 	  'navarasu/onedark.nvim',
 	  config = function()
-		  vim.cmd('colorscheme onedark')
+		  vim.cmd('silent! colorscheme onedark')
 	  end
   })
 
@@ -58,38 +58,17 @@ return require('packer').startup(function(use)
   }
 }
 
-use { 'alexghergh/nvim-tmux-navigation', config = function()
-    require'nvim-tmux-navigation'.setup {
-        disable_when_zoomed = true, -- defaults to false
-        keybindings = {
-            left = "<C-h>",
-            down = "<C-j>",
-            up = "<C-k>",
-            right = "<C-l>",
-        }
-    }
-end
-}
+use { 'alexghergh/nvim-tmux-navigation'}
 
-use {"akinsho/toggleterm.nvim", tag = '*', config = function()
-    require("toggleterm").setup()
-end}
+use {"akinsho/toggleterm.nvim", tag = '*'}
 
-use {
-  'lewis6991/gitsigns.nvim',
-  config = function()
-    require('gitsigns').setup()
-  end
-}
+use {'lewis6991/gitsigns.nvim'}
 
 use {'nvim-pack/nvim-spectre'}
 use {'RRethy/vim-illuminate'}
 use {'machakann/vim-sandwich'}
 
-use {
-	"windwp/nvim-autopairs",
-    config = function() require("nvim-autopairs").setup {} end
-}
+use {"windwp/nvim-autopairs"}
 
 use {'numToStr/Comment.nvim'}
 
