@@ -27,11 +27,18 @@ git clone https://github.com/5822791760/nvim.git ~/.config/nvim
 <leader>r = Replace word and can use . to replace occurence
 <leader>R = Same as <leader>r but for 'W'
 <leader>e = file explorer
-
-<C-\> = Toggle term (bottom)
 ```
 
 ## Plugin Hotkey
+toggle term
+```
+<C-\> = Toggle term (bottom)
+```
+
+Comment
+```
+<leader>/ = Toggle comment
+```
 
 vim sandwich
 ```
