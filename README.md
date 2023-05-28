@@ -35,6 +35,13 @@ nvim
 ```
 
 ## Plugin Hotkey
+telescope
+```
+<C-j> = navigate next
+<C-k> = navigate previous
+<ENTER> = accept
+```
+
 toggle term
 ```
 <C-\> = Toggle term (bottom)
@@ -65,6 +72,11 @@ harpoon
 undo tree
 ```
 <leader>u = Toggle undo tree
+```
+
+neoclip
+```
+<C-p> = open registry explorer
 ```
 
 ---
