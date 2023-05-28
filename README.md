@@ -2,8 +2,10 @@
 ### For using neovim spectre and theme
 ```
 brew install iterm2 neovim gnu-sed
+```
 
-# Recommend to use with lazygit
+### Recommend to use with lazygit
+```
 brew install lazygit
 ```
 
@@ -69,11 +71,12 @@ undo tree
 
 # Total Plugin
 ```
-                packer.nvim - Total plugins: 23
+                packer.nvim - Total plugins: 24
  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
  • Comment.nvim
  • LuaSnip
  • cmp-nvim-lsp
+ • formatter.nvim
  • gitsigns.nvim
  • harpoon
  • lsp-zero.nvim
@@ -82,6 +85,7 @@ undo tree
  • nvim-autopairs
  • nvim-cmp
  • nvim-lspconfig
+ • nvim-neoclip.lua
  • nvim-spectre
  • nvim-tmux-navigation
  • nvim-treesitter
@@ -91,7 +95,6 @@ undo tree
  • telescope.nvim
  • toggleterm.nvim
  • undotree
- • vim-fugitive
  • vim-illuminate
  • vim-sandwich
 
@@ -100,11 +103,15 @@ undo tree
 ---
 
 # Uninstall
+
+### Remove File
 ```
 # Linux / Macos (unix)
 rm -rf ~/.config/nvim
 rm -rf ~/.local/share/nvim
+```
 
-brew remove neovim gnu-sed
-brew autoremove
+### Remove Package from brew
+```
+brew remove neovim gnu-sed && brew autoremove
 ```

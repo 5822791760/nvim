@@ -73,6 +73,13 @@ return require('packer').startup(function(use)
     use { 'numToStr/Comment.nvim' }
     use { 'mhartington/formatter.nvim' }
 
+    use {
+        "AckslD/nvim-neoclip.lua",
+        requires = {
+            -- you'll need at least one of these
+            { 'nvim-telescope/telescope.nvim' },
+        },
+    }
     if packer_bootstrap then
         require('packer').sync()
     end

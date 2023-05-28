@@ -16,9 +16,9 @@ if ok then
       -- Formatter configurations for filetype "lua" go here
       -- and will be executed in order
       python = {
-	-- "formatter.filetypes.lua" defines default configurations for the
-	-- "lua" filetype
-	require("formatter.filetypes.python").autopep8,
+                -- "formatter.filetypes.lua" defines default configurations for the
+                -- "lua" filetype
+                require("formatter.filetypes.python").autopep8,
       }
     }
   }

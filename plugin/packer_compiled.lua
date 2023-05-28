@@ -134,6 +134,11 @@ _G.packer_plugins = {
     path = "/Users/bombamishappy/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-neoclip.lua"] = {
+    loaded = true,
+    path = "/Users/bombamishappy/.local/share/nvim/site/pack/packer/start/nvim-neoclip.lua",
+    url = "https://github.com/AckslD/nvim-neoclip.lua"
+  },
   ["nvim-spectre"] = {
     loaded = true,
     path = "/Users/bombamishappy/.local/share/nvim/site/pack/packer/start/nvim-spectre",
