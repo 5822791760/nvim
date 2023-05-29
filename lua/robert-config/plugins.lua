@@ -26,9 +26,9 @@ return require('packer').startup(function(use)
     }
 
     use({
-        'navarasu/onedark.nvim',
+        'sainnhe/everforest',
         config = function()
-            vim.cmd('silent! colorscheme onedark')
+            vim.cmd('silent! colorscheme everforest')
         end
     })
 
@@ -72,6 +72,7 @@ return require('packer').startup(function(use)
 
     use { 'numToStr/Comment.nvim' }
     use { 'mhartington/formatter.nvim' }
+    use { 'Vimjas/vim-python-pep8-indent' }
 
     use {
         "AckslD/nvim-neoclip.lua",
