@@ -38,7 +38,12 @@ if ok then
         select_behavior = 'insert'
     })
 
+    require("luasnip.loaders.from_vscode").lazy_load()
     cmp.setup({
+        sources = {
+            {name = 'nvim_lsp'},
+            {name = 'luasnip'},
+        },
         mapping = {
             -- `Enter` key to confirm completion
             ['<CR>'] = cmp.mapping.confirm({ select = false }),

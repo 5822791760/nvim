@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/Users/bombamishappy/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  cmp_luasnip = {
+    loaded = true,
+    path = "/Users/bombamishappy/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
+    url = "https://github.com/saadparwaiz1/cmp_luasnip"
+  },
   everforest = {
     config = { "\27LJ\2\nB\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0#silent! colorscheme everforest\bcmd\bvim\0" },
     loaded = true,
@@ -99,6 +104,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/bombamishappy/.local/share/nvim/site/pack/packer/start/formatter.nvim",
     url = "https://github.com/mhartington/formatter.nvim"
+  },
+  ["friendly-snippets"] = {
+    loaded = true,
+    path = "/Users/bombamishappy/.local/share/nvim/site/pack/packer/start/friendly-snippets",
+    url = "https://github.com/5822791760/friendly-snippets"
   },
   ["gitsigns.nvim"] = {
     loaded = true,

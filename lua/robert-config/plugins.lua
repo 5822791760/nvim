@@ -54,7 +54,11 @@ return require('packer').startup(function(use)
             -- Autocompletion
             { 'hrsh7th/nvim-cmp' }, -- Required
             { 'hrsh7th/cmp-nvim-lsp' }, -- Required
-            { 'L3MON4D3/LuaSnip' }, -- Required
+            { "L3MON4D3/LuaSnip" }, -- Required
+            { 'saadparwaiz1/cmp_luasnip' },
+
+            --Snippets
+            { "5822791760/friendly-snippets" }
         }
     }
 
@@ -81,6 +85,7 @@ return require('packer').startup(function(use)
             { 'nvim-telescope/telescope.nvim' },
         },
     }
+
     if packer_bootstrap then
         require('packer').sync()
     end
