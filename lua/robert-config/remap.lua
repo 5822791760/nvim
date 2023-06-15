@@ -24,9 +24,12 @@ vim.keymap.set("i", "<C-c>", "<Esc>")
 vim.keymap.set("n", "Q", "<nop>")
 
 vim.keymap.set("n", "<leader>w", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+vim.keymap.set("v", "<leader>w", [[:s//gI<Left><Left><Left>]])
 
 vim.keymap.set("n", "<leader>r", [[viwy/\V<C-r>"<CR>Ncgn]])
 vim.keymap.set("n", "<leader>R", [[viWy/\V<C-r>"<CR>Ncgn]])
 vim.keymap.set("v", "<leader>r", [[y/\V<C-r>"<CR>Ncgn]])
+vim.keymap.set("n", "<leader>W", [[:%s/\s\{1,}//gc<Left><Left><Left>]])
+vim.keymap.set("v", "<leader>W", [[:s/\s\{1,}//gc<Left><Left><Left>]])
 
 vim.keymap.set("n", "<leader>l", [[:ls<cr>:b]])

@@ -4,9 +4,10 @@ if ok then
         keys = {
             telescope = {
                 i = {
-                    select = '<c-o>',
-                    paste = '<cr>',
+                    -- select = '<c-o>',
+                    -- paste = '<c-p>',
                     paste_behind = '<c-p>',
+                    select = '<cr>',
                 },
             },
         }

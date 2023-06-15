@@ -21,10 +21,13 @@ vim.opt.incsearch = true
 
 vim.opt.termguicolors = true
 
--- vim.opt.scrolloff = 4
+vim.opt.scrolloff = 2
 vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
 
 vim.cmd[[set guicursor=n-v-c:block-Cursor]]
+
+vim.cmd[[au FocusGained,BufEnter * :silent! !]]
+vim.cmd[[au FocusLost,WinLeave * :silent! noautocmd w]]
