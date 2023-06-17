@@ -33,3 +33,7 @@ vim.keymap.set("n", "<leader>W", [[:%s/\s\{1,}//gc<Left><Left><Left>]])
 vim.keymap.set("v", "<leader>W", [[:s/\s\{1,}//gc<Left><Left><Left>]])
 
 vim.keymap.set("n", "<leader>l", [[:ls<cr>:b]])
+
+vim.keymap.set("v", ">", ">gv^")
+vim.keymap.set("v", "<", "<gv^")
+

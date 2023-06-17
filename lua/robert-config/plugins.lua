@@ -86,6 +86,9 @@ return require('packer').startup(function(use)
         },
     }
 
+    -- for lazygit nvim
+    use { "kdheepak/lazygit.nvim" }
+
     if packer_bootstrap then
         require('packer').sync()
     end

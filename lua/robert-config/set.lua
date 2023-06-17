@@ -31,4 +31,3 @@ vim.cmd[[set guicursor=n-v-c:block-Cursor]]
 vim.cmd[[set guicursor+=i:ver100-iCursor]]
 
 vim.cmd[[au FocusGained,BufEnter * :silent! !]]
-vim.cmd[[au FocusLost,WinLeave * :silent! noautocmd w]]
