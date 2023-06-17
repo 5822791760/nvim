@@ -7,6 +7,15 @@ brew install iterm2 neovim gnu-sed
 ### Recommend to use with lazygit
 ```
 brew install lazygit
+
+# to make lazygit plugin work set this up
+# ~/.bashrc
+alias nvim='nvim --listen /tmp/nvim-server.pipe'
+
+# ~/.config/lazygit/config.yml
+os:
+  editCommand: 'nvim'
+  editCommandTemplate: '{{editor}} --server /tmp/nvim-server.pipe --remote-tab "$(pwd)/{{filename}}"'
 ```
 
 ### Clone Config
