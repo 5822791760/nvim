@@ -88,18 +88,29 @@ neoclip
 <C-p> = open registry explorer
 ```
 
+nvim diff-view
+```
+<leader>D = diff view
+<leader>q = Exit diff view
+```
+
 ---
 
 # Total Plugin
 ```
-                packer.nvim - Total plugins: 24
+                packer.nvim - Total plugins: 29
  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
  • Comment.nvim
  • LuaSnip
  • cmp-nvim-lsp
+ • cmp_luasnip
+ • diffview.nvim
+ • everforest
  • formatter.nvim
+ • friendly-snippets
  • gitsigns.nvim
  • harpoon
+ • lazygit.nvim
  • lsp-zero.nvim
  • mason-lspconfig.nvim
  • mason.nvim
@@ -110,13 +121,13 @@ neoclip
  • nvim-spectre
  • nvim-tmux-navigation
  • nvim-treesitter
- • onedark.nvim
  • packer.nvim
  • plenary.nvim
  • telescope.nvim
  • toggleterm.nvim
  • undotree
  • vim-illuminate
+ • vim-python-pep8-indent
  • vim-sandwich
 
 ```
