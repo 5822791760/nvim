@@ -4,8 +4,8 @@ if ok then
 end
 
 -- Provides the Format, FormatWrite, FormatLock, and FormatWriteLock commands
-local ok, _ = pcall(require, 'formatter')
-if ok then
+local ok2, _ = pcall(require, 'formatter')
+if ok2 then
   require("formatter").setup {
     -- Enable or disable logging
     logging = true,

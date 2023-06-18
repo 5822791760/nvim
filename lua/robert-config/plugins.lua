@@ -89,6 +89,9 @@ return require('packer').startup(function(use)
     -- for lazygit nvim
     use { "kdheepak/lazygit.nvim" }
 
+    --git diff view
+    use {"sindrets/diffview.nvim"}
+
     if packer_bootstrap then
         require('packer').sync()
     end
